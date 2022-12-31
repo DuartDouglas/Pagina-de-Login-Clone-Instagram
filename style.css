@@ -1,0 +1,224 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   text-decoration: none;
+   
+
+}
+
+:root {
+   --dark-blue: hsl(221, 41%, 37%); 
+   --medium-blue: hsl(200, 95%, 65%); 
+   --light-blue: hsl(204, 93%, 84%); 
+   --black: hsl(0, 0%, 15%);
+   --gray: hsl(0, 0%, 89%);
+   --background: hsl(0, 0%, 98%);
+   --background-login: hsl(0, 0%, 100%);
+}
+
+#main {
+   background: var(--background);
+   display: flex;
+   justify-content: center;
+   gap: 1.4rem;
+   padding-top: 2rem;
+   padding-bottom: 4rem;
+   
+   
+}
+
+#login {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 25%;
+
+   
+}
+
+#loginBlock {
+   background: var(--background-login);
+   border: 1px solid var(--gray);
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 1rem;
+}
+
+#loginBlock img {
+   margin-top: 2.3rem;
+}
+
+#loginBlock .inputName {
+   background: var(--background);
+   width: 70%;
+   
+   border: 1px solid var(--gray);
+   border-radius: 0.2rem;
+
+   padding-block: .7rem;
+   padding-inline: .7rem;
+   margin-top: 2.5rem;
+}  
+
+::placeholder {
+   color: rgb(185, 179, 179);
+   font-weight:lighter;
+   font-size: 0.68rem;
+   letter-spacing: 0.04rem;
+}
+
+#loginBlock .inputPassword {
+   background: var(--background);
+   width: 70%;
+   border: 1px solid var(--gray);
+   border-radius: 0.2rem;
+   
+   padding-block: .7rem;
+   padding-inline: .7rem;
+   margin-top: .8rem;
+   margin-bottom: 1rem;
+} 
+
+#loginBlock .button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+
+#loginBlock .button a {
+   background: var(--light-blue);
+   color: white;
+   font-weight: bold;
+   width: 70%;
+
+   border: none;
+   border-radius: 0.2rem;
+
+   padding-block: .5rem;
+   padding-inline: .5rem;
+
+   text-align: center;
+}
+
+#loginBlock p {
+   color:rgb(141, 133, 133);
+   font-weight: bold;
+   font-size: .8rem;
+   margin-top: 1rem;
+   margin-bottom: 1.5rem;
+}
+
+#loginBlock p::before {
+   content: "_________ ";
+   position: relative;
+   top: -45%;
+}
+
+#loginBlock p::after {
+   content: " _________";
+   position: relative;
+   top: -45%;
+}
+
+
+
+#loginBlock .facebookLogin {
+   margin-bottom: 1.2rem;
+}
+
+#loginBlock :nth-last-child(2) {
+   font-size: 0.8rem;
+   font-weight: bold;
+
+   display: flex;
+   justify-content: center;
+   gap: 0.7rem;
+}
+
+#loginBlock .recover {
+   font-size: .74rem;
+   font-weight: 400;
+   color: var(--black);
+   margin-bottom: 1.2rem;
+}
+
+#newAcount {
+   background: var(--background-login);
+   border: 1px solid var(--gray);
+
+   margin-top: .5rem;
+   padding-block: 1.2rem;
+   padding-inline: 1.2rem;
+   text-align: center;
+}
+
+#newAcount a {
+   color: var(--black);
+   font-size: 0.9rem;
+   font-weight: 400;
+}
+
+
+#newAcount span {
+   color: var(--medium-blue);
+   font-size: 0.9rem;
+   font-weight: bold;
+}
+
+#apps {
+   text-align: center;
+   margin-top: 1rem;
+
+}
+
+#apps p {
+   font-size: 0.9rem;
+   color: var(--black);
+   font-weight: 400;
+   margin-bottom: 1rem;
+}
+
+
+#apps img {
+   width: 40%;
+   margin-top: 0;
+}
+
+#footer {
+   color: var(--gray);
+   background: var(--background);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+
+   flex-wrap: wrap;
+   
+   font-size: .8rem;
+   gap: 1rem;
+   word-spacing: 0.6rem;
+
+   padding-bottom: 4rem;  
+   padding-inline: 1rem;
+}
+
+/*=======================*/
+
+@media (max-width: 950px) {
+   #imageCel {
+      display: none;
+   }
+
+   #login {
+      width: 88%;
+   }
+
+   #footer {
+      padding-inline: 2rem;
+   }
+}
